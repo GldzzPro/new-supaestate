@@ -1,0 +1,32 @@
+{
+  "meeting": {
+    "title": "Planifier un Rendez-vous",
+    "steps": {
+      "type": "Sélectionner le Type",
+      "schedule": "Choisir l'Heure"
+    },
+    "types": {
+      "online": {
+        "title": "Rendez-vous en Ligne",
+        "description": "Planifiez une réunion virtuelle de n'importe où dans le monde"
+      },
+      "office": {
+        "title": "Rendez-vous au Bureau",
+        "description": "Visitez notre bureau pour une consultation en personne"
+      }
+    },
+    "calendar": {
+      "online": {
+        "title": "Sélectionner l'Heure de la Réunion en Ligne",
+        "description": "Choisissez une heure convenable pour votre consultation virtuelle"
+      },
+      "office": {
+        "title": "Sélectionner l'Heure de la Visite au Bureau",
+        "description": "Choisissez une heure pour visiter notre bureau"
+      }
+    }
+  },
+  "contact": {
+    "scheduleMeeting": "Planifier un Rendez-vous"
+  }
+}

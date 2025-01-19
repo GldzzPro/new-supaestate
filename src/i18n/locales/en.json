@@ -1,0 +1,37 @@
+{
+  "meeting": {
+    "title": "Schedule a Meeting",
+    "steps": {
+      "type": "Select Meeting Type",
+      "schedule": "Choose Time"
+    },
+    "types": {
+      "online": {
+        "title": "Online Meeting",
+        "description": "Schedule a virtual meeting from anywhere in the world"
+      },
+      "office": {
+        "title": "Office Meeting",
+        "description": "Visit our office for an in-person consultation"
+      }
+    },
+    "calendar": {
+      "online": {
+        "title": "Select Online Meeting Time",
+        "description": "Choose a convenient time for your virtual consultation"
+      },
+      "office": {
+        "title": "Select Office Visit Time",
+        "description": "Choose a time to visit our office"
+      }
+    }
+  },
+  "contact": {
+    "scheduleMeeting": "Schedule a Meeting"
+  },
+  "common": {
+    "back": "Back",
+    "search": "Search",
+    "send": "Send"
+  }
+}
