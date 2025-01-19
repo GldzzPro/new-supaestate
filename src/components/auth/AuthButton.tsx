@@ -5,19 +5,17 @@ import { supabase } from '../../lib/supabase';
 
 export function AuthButton() {
   const navigate = useNavigate();
-  const [user, setUser] = React.useState(null);
+  const [user, setUser] = React.useState<any>(null);
 
   React.useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
     });
-
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
     });
-
     return () => subscription.unsubscribe();
   }, []);
 
@@ -25,11 +23,10 @@ export function AuthButton() {
     await supabase.auth.signInWithOAuth({
       provider,
       options: {
-        redirectTo: window.location.origin,
-      },
+        redirectTo: 'http://localhost:5173',
+      }
     });
   };
-
   const handleSignOut = async () => {
     await supabase.auth.signOut();
     navigate('/');
@@ -53,6 +50,8 @@ export function AuthButton() {
       </div>
     );
   }
+
+
 
   return (
     <div className="flex items-center gap-4">

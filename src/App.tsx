@@ -1,12 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components/layout/Navbar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Footer } from './components/layout/Footer';
-import { HomePage } from './pages/HomePage';
+import { Navbar } from './components/layout/Navbar';
+import { ContactPage } from './pages/ContactPage';
 import { DiscoverPage } from './pages/DiscoverPage';
+import { HomePage } from './pages/HomePage';
 import { ListingsPage } from './pages/ListingsPage';
 import { PropertyPage } from './pages/PropertyPage';
-import { ContactPage } from './pages/ContactPage';
 import { ScheduleMeetingPage } from './pages/ScheduleMeetingPage';
 
 function App() {
